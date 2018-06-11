@@ -1,0 +1,389 @@
+/*------------------------------------------ Overall Formatting Start ------------------------------------------*/
+/*========================================== link format start*/
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+a {
+    color: white;
+}
+/*========================================== link format end*/
+/*========================================== vertical nav bar format start*/
+.NavBar {
+    height: 100%;
+    width: 12%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.NavBar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+	font-size: 1.3vw;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.NavBar a:hover {
+    color: #f1f1f1;
+}
+/*========================================== vertical nav bar format end*/
+/*------------------------------------------ Overall Formatting end ------------------------------------------*/
+
+
+/*------------------------------------------ Homepage Formatting Start ------------------------------------------*/
+/*========================================== text format starts*/
+/*homepage format of body*/
+body.HomePage {
+	/*background image*/
+	background-image: url("Pictures/HomepageBackground.jpg");
+	/*image filter; slightly darken*/
+	background-blend-mode: hard-light;
+	/*put background image to fixed position*/
+	background-attachment: fixed;
+	/*move with window when resized*/
+	background-size: cover;
+	background-color: rgba(29, 47, 62, 1);
+}
+/*homepage format of heading 1*/
+h1.HomePage {
+	z-index: 1;
+	font-family: 'Century Schoolbook', sans-serif;	
+	color: #FFA500;
+	/*text shadow*/
+	text-shadow: 7px 7px 6px #000000;
+	/*set position fixed to provided location*/
+	position: fixed;
+	/*specific text size for home page*/
+	font-size:4.5vw;
+	/*move down*/
+	top: 40%;
+	/*full width*/
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+/*homepage format of paragraph*/
+p.HomePage {
+	z-index: 1;
+	/*set position fixed to provided location*/
+	position: fixed;
+	font-family: 'Trebuchet MS', sans-serif;	
+    font-size: 1.7vw;
+	color: white;
+	/*text shadow*/
+	text-shadow: 7px 7px 6px #000000;
+	/*replace break tag - pre-formatted by switching lines*/
+	white-space: pre-line;
+	/*move down*/
+	top: 50%;
+	/*move right*/
+    width: 100%;
+	/*align text to center*/
+	text-align: center;
+	margin: 0;
+}
+#DoubleLine {
+	z-index: 1;
+	/*set position fixed to provided location*/
+    position: fixed;
+	line-height: 0.1%;
+	height: 0.1vw;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	width: 40%;
+	top: 50%;
+	left: 30%;
+	filter: drop-shadow(4px 4px 8px black);
+}
+#TitleBox {
+	z-index: 0;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 20px 20px;
+	border: 5px solid orange;
+	padding-top: 23%;
+	width: 50%;
+	top: 35%;
+	left: 25.5%;
+}
+img.HomePageSemantics{
+	position: fixed;
+	top: 90%;
+	/*move right*/
+	left: 45.5vw;
+    width: 10vw;
+    height: 4vw;
+}
+.HomeCopyright {
+	position: fixed;
+	color: white;
+	top: 96%;
+	margin: 0;
+	left: 1vw;
+	font-size: 1vw;
+	/*text shadow*/
+	text-shadow: 7px 7px 6px #000000;
+}
+/*========================================== text format ends*/
+/*------------------------------------------ button format starts*/
+.ExploreButton {
+	/*set position fixed to provided location*/
+	position: fixed;
+	/*set font size*/
+	font-size: 1.3vw;
+	/*set button text color to white*/
+	color: #FFFFFF;
+	/*align button text to center*/
+	text-align: center;
+	/*set background color to transparent light orange*/
+	background-color: #0DAD88;/*rgba(32, 178, 170, 0.9)*/
+	/*remove border*/
+	border: none;
+	/*smooth border edges*/
+	border-radius: 8px 8px;
+	/*add space between text and border of button*/
+	padding: 0.5vw;
+	padding-top: 0.7vw;
+	padding-bottom: 0.7vw;
+	/*set button width*/
+	width: 9vw;
+	/*move down*/
+	top: 60%;
+	/*move right*/
+	left: 50%;
+	/*move button to location*/
+	transform: translate(-50%, 50%);
+	/*set transition time*/
+	transition: 0.5s;
+	font-variant:small-caps;
+	filter: drop-shadow(4px 4px 8px black);
+	text-decoration: none;
+}
+.ExploreButton span {
+	/*change position relative to text*/
+	position: relative;
+	/*change transition time*/
+	transition: 0.5s;
+}
+.ExploreButton span:after {
+	/*display double arrow*/
+	content: '\00bb';
+	position: absolute;
+	/*hide arrow*/
+	opacity: 0;
+	/*move to right*/
+	right: -20px;
+	transition: 0.5s;
+}
+/*move text*/
+.ExploreButton:hover span {
+	padding-right: 25px;
+}
+/*display double arrow*/
+.ExploreButton:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+.ExploreButton:hover {
+    text-decoration: none;
+}
+/*------------------------------------------ button format ends*/
+/*------------------------------------------ Homepage Formatting End ------------------------------------------*/
+
+
+/*------------------------------------------ Information Page Formatting Start ------------------------------------------*/
+/*========================================== content format starts*/
+html.InformationPage {
+    margin-left: 12%;
+}
+body.InformationPage {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+}
+p.InformationPage {
+	font-family: 'Trebuchet MS', sans-serif;	
+}
+h1.InformationPage {
+	font-family: 'Century Schoolbook', sans-serif;	
+	color: #000000;
+	/*set position relative to provided location*/
+	position: relative;
+	/*specific text size for home page*/
+	font-size:4.5vw;
+	/*full width*/
+	width: 100%;
+	text-align: center;
+	margin: 0;
+
+}
+.ImageContent {
+	float: left;
+    width: 100%;
+    height: 100%;
+	object-fit: contain;
+}
+/*========================================== content format end*/
+/*------------------------------------------ add-on format start*/
+a.SubNavBar {
+	font-size: 1vw;
+	margin-left: 12%;
+}
+.InformationCopyright {
+	position: relative;
+	color: black;
+	font-size: 1vw;
+	top: 100%;
+}
+img.InformationPageSemantics{
+	position: relative;
+	top: 100%;
+	/*move right*/
+	left: 39vw;
+    width: 10vw;
+    height: 4vw;
+}
+#BackToTopButton {
+	position: fixed;
+    top: 89%;
+    right: 1%;
+	
+	height: 9%;
+	width: 5%;
+	object-fit: contain;
+}
+/*------------------------------------------ add-on format end*/
+/*------------------------------------------ Information Page Formatting End ------------------------------------------*/
+
+
+/*------------------------------------------ Process Page Formatting Start ------------------------------------------*/
+/*========================================== content format starts*/
+html.ProcessPage {
+    margin-left: 12%;
+}
+body.ProcessPage {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+}
+p.ProcessPage {
+	/*replace break tag - pre-formatted by switching lines*/
+	white-space: pre-line;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1.5vw;
+	text-align: center;
+}
+h1.ProcessPage {
+	font-family: 'Century Schoolbook', sans-serif;	
+	color: #000000;
+	/*set position relative to provided location*/
+	position: relative;
+	/*specific text size for home page*/
+	font-size:4.5vw;
+	/*full width*/
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+.ProcessImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 10%;
+	object-fit: contain;
+}
+/*========================================== content format end*/
+/*------------------------------------------ add-on format start*/
+a.SubNavBar {
+	font-size: 1vw;
+	margin-left: 12%;
+}
+.ProcessCopyright {
+	position: relative;
+	color: black;
+	font-size: 1vw;
+	top: 100%;
+}
+img.ProcessPageSemantics{
+	position: relative;
+	top: 100%;
+	/*move right*/
+	left: 39vw;
+    width: 10vw;
+    height: 4vw;
+}
+#BackToTopButton {
+	position: fixed;
+    top: 89%;
+    right: 1%;
+	
+	height: 9%;
+	width: 5%;
+	object-fit: contain;
+}
+/*------------------------------------------ add-on format end*/
+/*------------------------------------------ Process Page Formatting End ------------------------------------------*/
+
+
+/*------------------------------------------ References Page Formatting Start ------------------------------------------*/
+/*========================================== content format starts*/
+html.ReferencesPage {
+    margin-left: 12%;
+}
+body.ReferencesPage {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+}
+h1.ReferencesPage {
+	font-family: 'Century Schoolbook', sans-serif;	
+	color: #000000;
+	/*set position relative to provided location*/
+	position: relative;
+	/*specific text size for home page*/
+	font-size:4.5vw;
+	/*full width*/
+	width: 100%;
+	text-align: center;
+	margin: 0;
+
+}
+p.ReferencesPage {
+	/*replace break tag - pre-formatted by switching lines*/
+	white-space: pre-line;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1.5vw;
+}
+/*========================================== content format end*/
+/*------------------------------------------ add-on format start*/
+.ReferencesCopyright {
+	position: relative;
+	color: black;
+	font-size: 1vw;
+	top: 100%;
+}
+img.ReferencesPageSemantics{
+	position: relative;
+	top: 100%;
+	/*move right*/
+	left: 39vw;
+    width: 10vw;
+    height: 4vw;
+}
+/*------------------------------------------ add-on format end*/
+/*------------------------------------------ References Page Formatting End ------------------------------------------*/
